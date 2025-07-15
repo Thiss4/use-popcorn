@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import { NavBar, Search, NumResults } from "./NavBar";
-import Loader from "./Loader/Loader";
+import {
+  Main,
+  Box,
+  MovieDetails,
+  WatchedMoviesList,
+  WatchedSummary,
+  MovieList,
+} from "./Body";
 import ErrorMessage from "./Error/ErrorMessage";
-import Main from "./Body/Main";
-import Box from "./Body/Box";
-import MovieDetails from "./Body/MovieDetails/MovieDetails";
-import WatchedSummary from "./Body/List/WatchedSummary";
-import WatchedMoviesList from "./Body/List/WatchedMoviesList";
-import MovieList from "./Body/List/MovieList";
+import Loader from "./Loader/Loader";
 import API_KEY from "./settings";
 
 export default function App() {

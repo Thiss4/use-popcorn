@@ -1,11 +1,4 @@
-export default function Star({
-  onRate,
-  full,
-  onHoverIn,
-  onHoverOut,
-  color,
-  size,
-}) {
+function Star({ onRate, full, onHoverIn, onHoverOut, color, size }) {
   const starStyle = {
     width: `${size}px`,
     height: `${size}px`,
@@ -48,6 +41,8 @@ export default function Star({
     </span>
   );
 }
+
+export default Star;
 
 /*
 FULL STAR

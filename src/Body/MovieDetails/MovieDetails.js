@@ -3,12 +3,7 @@ import StarRating from "../../StarRating/StarRating";
 import Loader from "../../Loader/Loader";
 import API_KEY from "../../settings";
 
-export default function MovieDetails({
-  selectedId,
-  onCloseMovie,
-  onAddWatched,
-  watched,
-}) {
+function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
   const [movie, setMovie] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [userRating, setUserRating] = useState("");
@@ -148,3 +143,5 @@ export default function MovieDetails({
     </div>
   );
 }
+
+export default MovieDetails;
